@@ -110,7 +110,3 @@ As principais dependências utilizadas, conforme o arquivo `package.json`, são:
 ![Calculadora](./Captura%20de%20tela%202023-10-14%20114417.png)
 
 ---
-
-## 🧑‍💻 Autor
-
-- **Seu Nome** - [Seu GitHub](https://github.com/seu-usuario)
