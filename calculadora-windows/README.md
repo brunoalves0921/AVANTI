@@ -1,92 +1,115 @@
-Calculadora Estilo Windows em React
 
-Este projeto é uma réplica funcional da calculadora do Windows, desenvolvida utilizando a biblioteca React. A aplicação busca recriar a experiência de usuário e as operações matemáticas da calculadora padrão do sistema operacional.
-🚀 Visão Geral do Projeto
+# 🧮 Calculadora Estilo Windows em React
 
-A calculadora foi criada como um componente React, utilizando o estado (useState) para gerenciar a entrada do usuário, os cálculos e o valor exibido no visor.
-✨ Funcionalidades Implementadas:
+Este projeto é uma réplica funcional da calculadora do Windows, desenvolvida utilizando a biblioteca **React**. A aplicação busca recriar a experiência de usuário e as operações matemáticas da calculadora padrão do sistema operacional.
 
-    Operações Aritméticas Básicas: Adição, subtração, multiplicação e divisão.
+## 🚀 Visão Geral do Projeto
 
-    Operações Secundárias:
+A calculadora foi criada como um componente React, utilizando o hook `useState` para gerenciar a entrada do usuário, os cálculos e o valor exibido no visor.
 
-        Cálculo de porcentagem (%).
+---
 
-        Raiz quadrada (√x).
+## ✨ Funcionalidades Implementadas
 
-        Elevar ao quadrado (x²).
+- **Operações Aritméticas Básicas:**
+  - Adição (+)
+  - Subtração (−)
+  - Multiplicação (×)
+  - Divisão (÷)
 
-        Inversão de valor (¹/ₓ).
+- **Operações Secundárias:**
+  - Porcentagem (%)
+  - Raiz quadrada (√x)
+  - Elevar ao quadrado (x²)
+  - Inversão de valor (¹/ₓ)
+  - Inversão de sinal (+/−)
 
-        Inversão de sinal (+/-).
+- **Controle de Exibição:**
+  - `C`: Limpa todo o cálculo (zera a calculadora)
+  - `CE`: Limpa apenas a entrada atual no visor
+  - `←`: (Backspace) Remove o último dígito inserido
 
-    Controle de Exibição:
+- **Suporte a Números Decimais:**
+  - Permite a utilização de vírgula (`,`) para operações com casas decimais.
 
-        C: Limpa todo o cálculo, zerando o estado da calculadora.
+---
 
-        CE: Limpa apenas a entrada atual no visor.
-
-        ← (Backspace): Remove o último dígito inserido.
-
-    Suporte a Números Decimais: Permite a utilização de vírgula (,) para operações com casas decimais.
-
-🛠️ Estrutura de Componentes
+## 🛠️ Estrutura de Componentes
 
 O projeto é modularizado nos seguintes componentes principais:
 
-    App.js: Componente principal que contém toda a lógica da calculadora e gerencia o estado da aplicação.
+- **`App.js`:**
+  Componente principal que contém toda a lógica da calculadora e gerencia o estado da aplicação.
 
-    Visor.js: Responsável por exibir os números e resultados das operações.
+- **`Visor.js`:**
+  Responsável por exibir os números e resultados das operações.
 
-    Botao.js: Componente reutilizável para todos os botões da calculadora.
+- **`Botao.js`:**
+  Componente reutilizável para todos os botões da calculadora.
 
-🎨 Estilização
+---
 
-A estilização foi feita com CSS puro, buscando uma aparência similar à da calculadora do Windows. Os principais arquivos de estilo são:
+## 🎨 Estilização
 
-    App.css: Define o layout principal da calculadora.
+A estilização foi feita com CSS puro, buscando uma aparência similar à calculadora do Windows.
 
-    Visor.css: Estiliza a tela de exibição dos valores.
+- **`App.css`:**
+  Define o layout principal da calculadora.
 
-    Botao.css: Estiliza os botões, com diferentes classes para números, operações principais, operações secundárias e o botão de igual.
+- **`Visor.css`:**
+  Estiliza a tela de exibição dos valores.
 
-Scripts Disponíveis
+- **`Botao.css`:**
+  Estiliza os botões, com diferentes classes para números, operações principais, operações secundárias e o botão de igual.
+
+---
+
+## 📜 Scripts Disponíveis
 
 No diretório do projeto, você pode executar:
-npm start
 
-Executa a aplicação em modo de desenvolvimento.
+### `npm start`
 
+- Executa a aplicação em modo de desenvolvimento.
+- Abra [http://localhost:3000](http://localhost:3000) para visualizá-la no seu navegador.
+- A página irá recarregar automaticamente quando você fizer alterações.
 
+### `npm test`
 
-Abra http://localhost:3000 para visualizá-la no seu navegador.
+- Inicia o executor de testes no modo interativo.
 
-A página irá recarregar automaticamente quando você fizer alterações.
-npm test
+### `npm run build`
 
-Inicia o executor de testes no modo interativo.
-npm run build
+- Compila a aplicação para produção na pasta `build`.
+- Otimiza a compilação para melhor desempenho.
 
-Compila a aplicação para produção na pasta build.
+### `npm run eject`
 
+> ⚠️ **Atenção:** Esta é uma operação irreversível.
+> Uma vez que você executa o `eject`, não pode mais voltar.
+> Isso permite personalizar as configurações de build.
 
+---
 
-Ele agrupa corretamente o React em modo de produção e otimiza a compilação para o melhor desempenho.
-npm run eject
+## 🔗 Dependências do Projeto
 
-Nota: esta é uma operação de sentido único. Uma vez que você eject, não pode mais voltar!
+As principais dependências utilizadas, conforme o arquivo `package.json`, são:
 
-Se você não estiver satisfeito com a ferramenta de compilação e as escolhas de configuração, pode ejetar a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
-🔗 Dependências do Projeto
+- [`react`](https://reactjs.org/)
+- [`react-dom`](https://reactjs.org/docs/react-dom.html)
+- [`react-scripts`](https://www.npmjs.com/package/react-scripts)
+- [`@testing-library/react`](https://testing-library.com/docs/react-testing-library/intro/) (para testes)
 
-As principais dependências utilizadas neste projeto, conforme o arquivo package.json, são:
+> Para uma lista completa, consulte o arquivo **`package.json`**.
 
-    react
+---
 
-    react-dom
+## 🚀 Demonstração
 
-    react-scripts
+> _(Adicione aqui prints da aplicação ou um link para uma demo hospedada, como no Netlify, Vercel ou GitHub Pages, se desejar)_
 
-    @testing-library/react para testes.
+---
 
-Para uma lista completa, consulte o arquivo package.json.
+## 🧑‍💻 Autor
+
+- **Seu Nome** - [Seu GitHub](https://github.com/seu-usuario)
