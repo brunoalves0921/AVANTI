@@ -1,0 +1,43 @@
+.botao {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  background-color: #f9f9f9;
+  color: #333;
+  font-weight: normal;
+}
+
+.botao:hover {
+  border-color: #0078d4;
+  background-color: #e6f2fa;
+}
+
+.botao:active {
+  background-color: #cce4f7;
+}
+
+.numero {
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.operacao-principal {
+  background-color: #f0f0f0;
+}
+
+.operacao-secundaria {
+  background-color: #f0f0f0;
+}
+
+.igual {
+  background-color: #0078d4;
+  color: white;
+}
+
+.igual:hover {
+  background-color: #005a9e;
+}
+
