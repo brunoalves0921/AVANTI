@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Calculadora Estilo Windows em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma réplica funcional da calculadora do Windows, desenvolvida utilizando a biblioteca React. A aplicação busca recriar a experiência de usuário e as operações matemáticas da calculadora padrão do sistema operacional.
+🚀 Visão Geral do Projeto
 
-## Available Scripts
+A calculadora foi criada como um componente React, utilizando o estado (useState) para gerenciar a entrada do usuário, os cálculos e o valor exibido no visor.
+✨ Funcionalidades Implementadas:
 
-In the project directory, you can run:
+    Operações Aritméticas Básicas: Adição, subtração, multiplicação e divisão.
 
-### `npm start`
+    Operações Secundárias:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        Cálculo de porcentagem (%).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        Raiz quadrada (√x).
 
-### `npm test`
+        Elevar ao quadrado (x²).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        Inversão de valor (¹/ₓ).
 
-### `npm run build`
+        Inversão de sinal (+/-).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Controle de Exibição:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        C: Limpa todo o cálculo, zerando o estado da calculadora.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        CE: Limpa apenas a entrada atual no visor.
 
-### `npm run eject`
+        ← (Backspace): Remove o último dígito inserido.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Suporte a Números Decimais: Permite a utilização de vírgula (,) para operações com casas decimais.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🛠️ Estrutura de Componentes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+O projeto é modularizado nos seguintes componentes principais:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    App.js: Componente principal que contém toda a lógica da calculadora e gerencia o estado da aplicação.
 
-## Learn More
+    Visor.js: Responsável por exibir os números e resultados das operações.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Botao.js: Componente reutilizável para todos os botões da calculadora.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🎨 Estilização
 
-### Code Splitting
+A estilização foi feita com CSS puro, buscando uma aparência similar à da calculadora do Windows. Os principais arquivos de estilo são:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    App.css: Define o layout principal da calculadora.
 
-### Analyzing the Bundle Size
+    Visor.css: Estiliza a tela de exibição dos valores.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Botao.css: Estiliza os botões, com diferentes classes para números, operações principais, operações secundárias e o botão de igual.
 
-### Making a Progressive Web App
+Scripts Disponíveis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+No diretório do projeto, você pode executar:
+npm start
 
-### Advanced Configuration
+Executa a aplicação em modo de desenvolvimento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Abra http://localhost:3000 para visualizá-la no seu navegador.
 
-### `npm run build` fails to minify
+A página irá recarregar automaticamente quando você fizer alterações.
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Inicia o executor de testes no modo interativo.
+npm run build
+
+Compila a aplicação para produção na pasta build.
+
+
+
+Ele agrupa corretamente o React em modo de produção e otimiza a compilação para o melhor desempenho.
+npm run eject
+
+Nota: esta é uma operação de sentido único. Uma vez que você eject, não pode mais voltar!
+
+Se você não estiver satisfeito com a ferramenta de compilação e as escolhas de configuração, pode ejetar a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
+🔗 Dependências do Projeto
+
+As principais dependências utilizadas neste projeto, conforme o arquivo package.json, são:
+
+    react
+
+    react-dom
+
+    react-scripts
+
+    @testing-library/react para testes.
+
+Para uma lista completa, consulte o arquivo package.json.
