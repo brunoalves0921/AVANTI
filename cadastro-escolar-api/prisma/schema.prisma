@@ -1,0 +1,26 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Modelo para a tabela de Alunos
+model Aluno {
+  id    Int     @id @default(autoincrement())
+  nome  String
+  email String  @unique
+  idade Int
+}
+
+// Modelo para a tabela de Professores
+model Professor {
+  id    Int     @id @default(autoincrement())
+  nome  String
+  email String  @unique
+  idade Int
+}
